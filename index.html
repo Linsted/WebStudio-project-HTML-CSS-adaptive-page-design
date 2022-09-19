@@ -12,7 +12,7 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
 		<link rel="stylesheet" href="./dist/css/main.min.css" />
 	</head>
-	<body>
+	<body >
 		
 		<header class="header">
 			<div class="container container--main-links">
@@ -20,13 +20,13 @@
 				<a href="./index.html" class="logo" id="logo-up-link">
 					<span class="logo__web">Web</span>Studio
 				</a>
-				<button type="button" class="mobile-button is-open">
+				<button type="button" class="mobile-button js-open-menu">
 					<svg class="mobile-button__icon" 
 						 width="24px" 
 						 height="16px" 
 						 aria-label="Мобільне меню">
 						<use class="mobile-button__menu" href="./images/icons-opt.svg#icon-menu_button"></use>
-						<use class="mobile-button__cross" href="./images/icons-opt.svg#icon-close_button"></use>
+						
 					</svg>
 				</button>
 				<ul class="main-nav__list">
@@ -35,6 +35,8 @@
 					<li class="main-nav__item"><a class="main-nav__link" href="">Контакти</a></li>
 				</ul>
 			</nav>
+
+			
 
 			<ul class="nav-contacts">
 				<li class="main-nav__item"> 
@@ -47,6 +49,32 @@
 				</li>
 			</ul>
 			</div>
+			<!-- Mobile menu -->
+			<div class="menu-window js-menu-container">
+				<button type="button" class="mobile-button mobile-button--close js-close-menu">
+					<svg class="mobile-button__icon" 
+						 width="24px" 
+						 height="16px" 
+						 aria-label="Закриття мобільного меню">
+						<use class="mobile-button__cross" href="./images/icons-opt.svg#icon-close_button"></use>
+					</svg>
+				</button>
+				
+				<ul class="mobile-nav__list">
+					<li class="mobile-nav__item"><a class="mobile-nav__link mobile-nav__link--active" href="./index.html" >Студія</a></li>
+					<li class="mobile-nav__item"><a class="mobile-nav__link" href="./portfolio.html">Портфоліо</a></li>
+					<li class="mobile-nav__item"><a class="mobile-nav__link" href="">Контакти</a></li>
+				</ul>
+				<ul class="mobile-contacts">
+					<li class="mobile-nav__item"> 
+				    	<a class="nav-contacts__link"  href="mailto:info@devstudio.com">info@devstudio.com</a>
+					</li>
+					<li class="mobile-nav__item">
+						<a class="mobile-contacts__link" href="tel:+380961111111">+38 096 111 11 11</a>
+					</li>
+
+			</div>
+			<!-- END mobile menu -->
 		</header>
 		
 		<main>
@@ -313,6 +341,9 @@
 				</form>
 			</div>
 		</div>
+
+
+		<script src="./js/mobile-menu.js"></script>
 		<script src="./js/modal.js"></script>
 		
 	</body>
