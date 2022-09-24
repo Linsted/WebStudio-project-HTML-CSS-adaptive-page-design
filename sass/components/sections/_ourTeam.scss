@@ -1,1 +1,59 @@
 /* Our team */
+.section--background-color {
+    background-color: #F5F4FA;
+}
+.setion__title {
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.1785;
+    
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.team-list__item {
+    padding-bottom: 24px;
+    background-color: #FFFFFF;
+}
+.team-list__description {
+    margin-top: 30px;
+}
+.team-list__names {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.1875;
+    
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.team-list__position {
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.1875;
+    
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: #757575;
+}
+.social-list {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.social-list__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    
+    
+}
+.social-list__icon {
+    fill: #AFB1B8;
+}

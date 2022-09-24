@@ -1,5 +1,22 @@
 /* UP button(link) */
+.up-link {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    
 
+    &:hover .up-link__icon,
+    &:focus .up-link__icon {
+        transform: scale(1.2);
+        opacity: 1;
+    }
 
+}
+.up-link__icon {
+    fill: var(--brand-color);
+    opacity: 0.5;
+    transition: transform 250ms linear,
+    opacity 250ms linear;
+}
 
 
