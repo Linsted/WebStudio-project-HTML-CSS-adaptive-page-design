@@ -1,7 +1,13 @@
 /* Header */
 .header {
+
     border-bottom: 1px solid #ECECEC;
     position: relative;
+}
+.container--main-links {
+    @media (min-width: 768px) {
+        display: flex;
+    }
 }
 .logo {
     color: #212121;
@@ -10,12 +16,16 @@
     font-size: 24px;
     line-height: 1.1666;
     text-decoration: none;
+    @media (min-width: 768px) {
+        margin-right: 88px;
+    }
     
 
     .logo__web {
         text-decoration: none;
         color: var(--brand-color);
     }
+
 }
 
 
@@ -51,8 +61,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    @media (max-width: 767px) {
+        padding-top: 10px;
+            padding-bottom: 10px;
+    }
+    @media (min-width: 768px) {
+        margin-right: 96px;
+    }
+    
 
 }
 
@@ -60,16 +76,70 @@
     @media (max-width: 767px) {
         display: none;
     }
+    display: flex;
+    gap: 50px;
+}
+.main-nav__link {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 32px;
+    padding-top: 32px;
+    font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+    
+        color: #212121;
+}
+.main-nav__link--active {
+    color: var(--brand-color);
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -1px;
+        right: -2px;
+        width: 47px;
+            height: 4px;
+            background: #2196F3;
+                border-radius: 2px;
+    }
 }
 .nav-contacts {
 
     @media (max-width: 767px) {
         display: none;
     }
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
 }
+.main-nav__item {
 
-
-
+}
+.nav-contacts__icon-mail {
+    fill: #757575;
+    width: 18px;
+    height: 14px;
+    margin-right: 8px;
+}
+.nav-contacts__icon-tel {
+    fill: #757575;
+    width: 14px;
+    height: 18px;
+    margin-right: 8px;
+}
+.nav-contacts__link {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.02em;
+        color: #757575;
+}
 
 
 

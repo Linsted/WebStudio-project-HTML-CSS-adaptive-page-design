@@ -1,7 +1,21 @@
 /* Features */
-.features-list {}
+.features-list {
+    @media (min-width: 768px) {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+}
 
-.features-list__item {}
+.features-list__item {
+    @media (min-width: 768px) {
+            
+            max-width: calc((100% - 30px) / 2);
+            height: auto;
+            
+    
+        }
+}
 
 .features-list__picture {
     display: flex;
@@ -18,9 +32,11 @@
     margin-bottom: 10px;
     font-size: 14px;
     line-height: 1.1428;
-    text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    @media (max-width: 767px) {
+        text-align: center;
+    }
 }
 
 .features-list__text {
