@@ -3,6 +3,10 @@
     position: fixed;
     bottom: 10px;
     right: 10px;
+    @media (min-width: 768px) {
+        bottom: 40px;
+        right: 50px;
+    }
     
 
     &:hover .up-link__icon,

@@ -104,6 +104,19 @@
                 border-radius: 2px;
     }
 }
+.main-nav__link--current {
+    color: var(--brand-color);
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -1px;
+        right: -2px;
+        width: 75px;
+        height: 4px;
+        background: #2196F3;
+            border-radius: 2px;
+    }
+}
 .nav-contacts {
 
     @media (max-width: 767px) {

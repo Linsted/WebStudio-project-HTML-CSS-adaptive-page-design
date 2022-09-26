@@ -7,6 +7,10 @@
     bottom: 0;
     right: 0;
     padding: 60px 15px;
+        @media (min-width: 768px) {
+            padding: 208px 159px;
+        }
+
     background-color: rgba(0, 0, 0, 0.2);
     
     transform: scale(1);
