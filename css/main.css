@@ -45,6 +45,11 @@ img {
     max-width: 768px;
   }
 }
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
 
 .section {
   padding-top: 60px;
@@ -78,10 +83,21 @@ a {
   border-bottom: 1px solid #ECECEC;
   position: relative;
 }
+@media (min-width: 1200px) {
+  .header {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+}
 
 @media (min-width: 768px) {
   .container--main-links {
     display: flex;
+  }
+}
+@media (min-width: 1200px) {
+  .container--main-links {
+    justify-content: space-between;
   }
 }
 
@@ -96,6 +112,11 @@ a {
 @media (min-width: 768px) {
   .logo {
     margin-right: 88px;
+  }
+}
+@media (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
   }
 }
 .logo .logo__web {
@@ -205,6 +226,13 @@ a {
     display: none;
   }
 }
+@media (min-width: 1200px) {
+  .nav-contacts {
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+  }
+}
 
 .nav-contacts__icon-mail {
   fill: #757575;
@@ -258,6 +286,18 @@ a {
 @media (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi), (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-bkg-tablet@2x.jpg);
+  }
+}
+@media (min-width: 1200px) {
+  .hero {
+    height: 600px;
+    max-width: 1600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-bkg-comp.jpg);
+  }
+}
+@media (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 192dpi), (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-bkg-comp@2x.jpg);
   }
 }
 .hero__title {
@@ -723,13 +763,6 @@ a {
 .section-portfolio__description {
   position: relative;
   overflow: hidden;
-}
-
-@media (min-width: 768px) {
-  .section-portfolio__image {
-    height: 294px;
-    width: 354px;
-  }
 }
 
 .section-portfolio__img-description {

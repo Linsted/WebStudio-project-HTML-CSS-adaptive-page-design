@@ -3,10 +3,17 @@
 
     border-bottom: 1px solid #ECECEC;
     position: relative;
+    @media (min-width: 1200px) {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
 }
 .container--main-links {
     @media (min-width: 768px) {
         display: flex;
+    }
+    @media (min-width: 1200px) {
+        justify-content: space-between;
     }
 }
 .logo {
@@ -19,7 +26,9 @@
     @media (min-width: 768px) {
         margin-right: 88px;
     }
-    
+    @media (min-width: 1200px) {
+            margin-right: 93px;
+    }
 
     .logo__web {
         text-decoration: none;
@@ -78,6 +87,7 @@
     }
     display: flex;
     gap: 50px;
+    
 }
 .main-nav__link {
     position: relative;
@@ -127,6 +137,11 @@
     gap: 10px;
     padding-top: 15px;
     padding-bottom: 15px;
+    @media (min-width: 1200px) {
+        flex-direction: row;
+        gap: 30px;
+        align-items: center;
+    }
 
 }
 .main-nav__item {
