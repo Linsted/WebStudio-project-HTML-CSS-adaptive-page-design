@@ -12,9 +12,13 @@
             
             max-width: calc((100% - 30px) / 2);
             height: auto;
-            
+    }
+
+    @media (min-width: 1200px) {
     
-        }
+            max-width: calc((100% - 30px * 3) / 4);
+            height: auto;
+    }
 }
 
 .features-list__picture {

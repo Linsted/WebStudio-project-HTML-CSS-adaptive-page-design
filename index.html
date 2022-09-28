@@ -41,7 +41,7 @@
 			<ul class="nav-contacts">
 				<li class="main-nav__item"> 
 				    <a class="nav-contacts__link"  href="mailto:info@devstudio.com"><svg class="nav-contacts__icon-mail">
-					<use href="./images/icons-opt.svg#icon-envelope"></use></svg>info@devstudio.com</a>
+					<use  href="./images/icons-opt.svg#icon-envelope"></use></svg>info@devstudio.com</a>
 				</li>
 				<li class="main-nav__item">
 					<a class="nav-contacts__link" href="tel:+380961111111"><svg class="nav-contacts__icon-tel">
@@ -145,15 +145,27 @@
 				<h2 class="setion__title">Чим ми займаємося</h2>
 				<ul class="work-list">
 					<li class="work-list__item">
-						<img src="./images/dekstop.jpg" alt="Зображення настільного комп'ютера" width="370" />
+						<img 
+						srcset="./images/dekstop.jpg 1x, ./images/dekstop@2x.jpg 2x"
+						src="./images/dekstop.jpg" 
+						alt="Зображення настільного комп'ютера" 
+						width="370" height="294px" />
 						<p class="work-list__text">Десктопні додатки</p>
 					</li>
 					<li class="work-list__item">
-						<img src="./images/mobile.jpg" alt="Зображення мобільного телефону" width="370" />
+						<img 
+						srcset="./images/mobile.jpg 1x, ./images/mobile@2x.jpg 2x"
+						src="./images/mobile.jpg" 
+						alt="Зображення мобільного телефону" 
+						width="370" height="294px"/>
 						<p class="work-list__text">Мобільні додатки</p>
 					</li>
 					<li class="work-list__item">
-						<img src="./images/tablet.jpg" alt="Зображення планшету" width="370" />
+						<img 
+						srcset="./images/tablet.jpg 1x, ./images/tablet@2x.jpg 2x"
+						src="./images/tablet.jpg" 
+						alt="Зображення планшету" 
+						width="370" height="294px"/>
 						<p class="work-list__text">Дизайнерські рішення</p>
 					</li>
 				</ul>
