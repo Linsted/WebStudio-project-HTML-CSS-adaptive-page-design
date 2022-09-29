@@ -5,7 +5,11 @@
     gap: 30px;
 }
 
-.clients-list__item {}
+.clients-list__item {
+    @media (max-width:479px) {
+        margin-inline: auto;
+    }
+}
 
 .clients-list__link {
     display: flex;
