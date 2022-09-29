@@ -1458,7 +1458,7 @@ a {
   background-color: rgba(33, 33, 33, 0.2);
 }
 
-@media (max-width: 393px) {
+@media (min-width: 304px) and (max-width: 393px) {
   .mobile-socials_items--center {
     padding-left: 98px;
   }

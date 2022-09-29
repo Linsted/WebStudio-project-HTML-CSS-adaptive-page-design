@@ -133,7 +133,7 @@ color: #2196F3;
 
 }
 .mobile-socials_items--center {
-    @media (max-width:393px) {
+    @media (min-width:304px) and (max-width:393px) {
             padding-left: 98px;
         }
 }
